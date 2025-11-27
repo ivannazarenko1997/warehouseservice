@@ -32,6 +32,8 @@ Provides REST API to fetch alarms
 
 Everything runs fully automatically — no user input required.
 
+
+
 🏗️ Architecture
 ┌─────────────────────────┐
 │   Temperature Sensor    │
@@ -58,6 +60,9 @@ Everything runs fully automatically — no user input required.
      │ GET /v1/api/alarms       │
      │ pageable, filter by type │
      └──────────────────────────┘
+
+
+
 
 🌡️ Sensor Specifications
 Sensor Type	UDP Port	Format	Threshold
