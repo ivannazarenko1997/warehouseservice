@@ -1,5 +1,5 @@
 FROM eclipse-temurin:21-jre
-ARG JAR_FILE=target/bookstore-inventory-0.1.0.jar
+ARG JAR_FILE=target/warehouse-tamplate-2.0.0.jar
 WORKDIR /app
 COPY ${JAR_FILE} app.jar
 ENV JAVA_OPTS=""
