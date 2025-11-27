@@ -32,38 +32,7 @@ Provides REST API to fetch alarms
 
 Everything runs fully automatically — no user input required.
 
-
-
-🏗️ Architecture
-┌─────────────────────────┐
-│   Temperature Sensor    │
-│   UDP → 3344            │
-└──────────────┬──────────┘
-               │ UDP
-               ▼
-       ┌──────────────────────┐
-       │                      │
-       │ Warehouse Monitoring │
-       │       Service       │
-       │ (Single Application)│
-       │                      │
-       │ - UDP Listener       │
-       │ - Regex Parser       │
-       │ - Threshold Checker  │
-       │ - Alarm Logger       │
-       │ - PostgreSQL Storage │
-       │ - REST API           │
-       └───────┬─────────────┘
-               │
-               ▼
-     ┌──────────────────────────┐
-     │ GET /v1/api/alarms       │
-     │ pageable, filter by type │
-     └──────────────────────────┘
-
-
-
-
+ 
 🌡️ Sensor Specifications
 Sensor Type	UDP Port	Format	Threshold
 Temperature	3344	sensor_id=t1; value=30	> 35°C
