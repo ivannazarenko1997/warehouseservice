@@ -54,6 +54,8 @@ If the value exceeds the configured threshold → an ALARM is raised.
 
  
 Possible urls:
+
+
 GET http://localhost:8080/v1/api/alarms?sensorType=TEMPERATURE
 GET http://localhost:8080/v1/api/alarms?sensorType=HUMIDITY
 GET http://localhost:8080/v1/api/alarms?page=0&size=20
